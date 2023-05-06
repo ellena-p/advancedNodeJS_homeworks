@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "d6b8504d-d880-4e23-8869-4bbe3a53fc2f",
+		"name": "libraryApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Default",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/book",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Author",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Joanne\",\r\n    \"lastName\":\"Rowling\",\r\n    \"email\":\"j.k.rowiling@mail.com\",\r\n    \"birthDate\":\"1965-07-31\" ,\r\n    \"books\":[]\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/author",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All authors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/author",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"author"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert publisher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"some Publisher\",\r\n    \"address\":\"this is the address\",\r\n    \"phoneNumber\":\"5468681654165\",\r\n    \"books\":[]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/publisher",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"publisher"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
